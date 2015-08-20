@@ -1,7 +1,7 @@
 import re
 
 def cleanup(text):
-	
+
 	text = input_file
 		.read()
 		.lower()
@@ -22,7 +22,12 @@ def cleanup(text):
 
 	return text
 
-with open("C:\data\\input.txt", 'r') as input_file:
-	text = cleanup(input_file.read())
-	with open("C:\data\\output.txt", "w") as output_file:
-		output_file.write(text)
+def main():
+	with open("C:\data\\input.txt", 'r') as input_file:
+		text = cleanup(input_file.read())
+		with open("C:\data\\output.txt", "w") as output_file:
+			output_file.write(text)
+
+
+if __name__ == '__main__':
+	main()
