@@ -2,8 +2,7 @@ import re
 
 def cleanup(text):
 
-	text = input_file
-		.read()
+	text = text
 		.lower()
 
 	text = re.sub(r"#[^ \n\t]*", "token_hash", text)
