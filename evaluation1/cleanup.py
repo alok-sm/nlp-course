@@ -1,3 +1,5 @@
+import re
+
 def cleanup(text):
 
 	text = text.lower().replace("rt", "").replace("&amp;", "&")
