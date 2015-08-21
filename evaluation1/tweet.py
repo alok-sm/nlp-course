@@ -37,4 +37,15 @@ for wi,wj in pair:
 	vec2.append((model.similarity(wi,wj)+1)/2)
 	print wi+" "+wj+" "+vec2[-1])
 	Data.append([wi,wj,vec2[-1]])
+f1 = open("results.csv", "w")
+for k, v in trigram.items():
+	f1.write( ",".join(list(k)) + "," + v + "\n")
+f1.close()
+f1 = open("results2.csv", "w")
+for it in range(len(pair)):
+	f1.write(pair[i1[0]]+","+ pair[it[1]]+","+ vec[it]+"," vec2[it]+ "\n")
+f1.close()
+
 	
+	
+	 
