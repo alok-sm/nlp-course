@@ -1,32 +1,45 @@
 import math
+import numpy as np
 from scipy.optimize import minimize as myMin
 class MyMaxEnt():
-	def __init__(self,histLst,funcs):
-		self.model=[0.0]*10
+	def __init__(self,histLst,funcs):	# Init With Both List Of Hist,Tag Pairs, And Functions (Callbacks).
+		self.model=np.array([0.0]*len(funcs))
 		self.histLst=histLst
 		self.funcs=funcs
-		self.Y=[]
+		self.Y=[]	# IMPORTANT Fill This Up With All Possible Tags. IMPORTANT
 		self.trainEx=[]
+		# self.testEx=[]
+		# Above Line To Be Used If Both Train And Test Are In The Same File.
 		self.create_dataset()
 		self.total=0.0
-	def create_dataset(self):
+		self.currentHist={}
+	def create_dataset(self):	# Dataset In The Form Of List Of Individual Examples, Each Of Which Is A Dict, With Keys Being The Possible Tags, And Values The f-vectors Of That Example. One Special Key Is "_exOP", Whose Value Is The Actual Tag Of The Example.
 		for it in self.histLst:
-			self.trainEx.append([]])
-			for jt in self.funcs:
-				self.trainEx[-1].append(jt(list(it)))
+			hst=list(it)
+			self.trainEx.append({})
+			for jt in self.Y:
+				self.trainEx[-1][jt]=[]
+				for kt in self.funcs:
+					self.trainEx[-1][jt].append(kt(hst[:4],jt))
+			self.trainEx[-1]["_exOP"]=hst[4]
+		# self.testEx=self.trainEx[int(0.8*len(trainEx)):]
+		# self.trainEx=self.trainEx[:int(0.8*len(trainEx))]
+		# Above 2 Lines To Be Used If Both Train And Test Are In The Same File.
 	def cost(self,model):
 		self.model=model
 		totalCost=0.0
 		for i in range(len(self.trainEx)):
-			totalCost+=dotP(self.trainEx[i])
+			totalCost+=dotP(self.trainEx[i][self.trainEx["_exOP"]])
 			nF=0.0
-			for y in Y:
-				nF+= math.exp(dotP(self.trainEx[i]))
-			nF=math.log(nF)
-			totalCost-=nF
+			for k, v in self.trainEx[i].items():
+				if k!="_exOP":
+					nF+= math.exp(self.dotP(v))
+			totalCost-=math.log(nF)
 		return totalCost
-	def classify(self,h):
+	def classify(self,h):	# Call On History Tuples To Test For, Returns Tag.
 		allTags=[]
+		self.histConvert(list(h))
+		self.setTot()
 		for it in self.Y:
 			allTags.append(self.p_y_given_x(h,it))
 		manC=0
@@ -41,24 +54,31 @@ class MyMaxEnt():
 		for ln in range(len(self.model)):
 			self.cumul+=self.model[ln]*h[ln]
 		return cumul
-	def setTot(self,h):
+	def setTot(self):
 		self.total=0.0
-		for it in Y:
-			self.total+=math.exp(dotP(h))
+		for v in self.currentHist.values:
+			self.total+=math.exp(dotP(v))
 	def p_y_given_x(self,h,tag):
-		self.setTot(h)
-		return math.exp(self.dotP(h))/self.total
-	def train(self):
-		params=myMin(self.cost,self.theta,method="L-BFGS-B")
+		return math.exp(self.dotP(self.currentHist[tag]))/self.total
+	def train(self):	# Call To Train Machine
+		params=myMin(self.cost,self.theta,method="L-BFGS-B")	# Add	jac=gradient	As A Parameter For The Optional Part.
 		self.theta=params.x
 	def gradient(self,model):
 		self.model=model
 		totalCost=0.0
 		for i in range(len(self.trainEx)):
-			totalCost+=trainEx[i]
+			totalCost+=self.trainEx[i][self.trainEx["_exOP"]]
 			nF=0.0
-			for y in Y:
-				nF+= math.exp(dotP(self.trainEx[i]))
-			nF=math.log(nF)
-			totalCost-=nF
+			tmpTot=0.0
+			for k, v in self.trainEx[i].items():
+				if k!="_exOP":
+					tmp=math.exp(dotP(v))
+					tmpTot+=tmp
+					nF+=v*tmp
+			totalCost-=(float(nF)/tmpTot)
 		return totalCost
+	def histConvert(self,h):
+		for it in self.Y:
+			self.currentHist[it]=[]
+			for jt in self.funcs:
+				self.currentHist[it].append(jt(h,it))
