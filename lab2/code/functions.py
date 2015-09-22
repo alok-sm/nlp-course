@@ -34,12 +34,15 @@ def get_functions():
 
 
 	return [
-		is_first_word, 
-		is_last_word, 
-		capital_first_letter, 
-		follows_noun, 
-		is_stopword, 
-		is_stemmed
+		is_first_word,
+		is_last_word,
+		capital_first_letter,
+		follows_noun,
+		is_stopword,
+		is_stemmed,
+		is_number,
+		is_abbrevation,
+		is_country
 	]
 
 
