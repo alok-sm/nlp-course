@@ -8,12 +8,14 @@ class MyMaxEnt():
 		self.funcs=funcs
 		self.Y=[]	# IMPORTANT Fill This Up With All Possible Tags. IMPORTANT
 		self.trainEx=[]
-		# self.testEx=[]
+		self.testEx=[]
 		# Above Line To Be Used If Both Train And Test Are In The Same File.
-		self.create_dataset()
 		self.total=0.0
 		self.currentHist={}
 	def create_dataset(self):	# Dataset In The Form Of List Of Individual Examples, Each Of Which Is A Dict, With Keys Being The Possible Tags, And Values The f-vectors Of That Example. One Special Key Is "_exOP", Whose Value Is The Actual Tag Of The Example.
+		self.testList=self.histLst[int(0.8*len(histLst)):]
+		self.histLst=self.histLst[:int(0.8*len(histLst))]
+		# Above 2 Lines To Be Used If Both Train And Test Are In The Same File.
 		for it in self.histLst:
 			hst=list(it)
 			self.trainEx.append({})
@@ -22,9 +24,6 @@ class MyMaxEnt():
 				for kt in self.funcs:
 					self.trainEx[-1][jt].append(kt(hst[:4],jt))
 			self.trainEx[-1]["_exOP"]=hst[4]
-		# self.testEx=self.trainEx[int(0.8*len(trainEx)):]
-		# self.trainEx=self.trainEx[:int(0.8*len(trainEx))]
-		# Above 2 Lines To Be Used If Both Train And Test Are In The Same File.
 	def cost(self,model):
 		self.model=model
 		totalCost=0.0
@@ -61,8 +60,12 @@ class MyMaxEnt():
 	def p_y_given_x(self,h,tag):
 		return math.exp(self.dotP(self.currentHist[tag]))/self.total
 	def train(self):	# Call To Train Machine
-		params=myMin(self.cost,self.theta,method="L-BFGS-B")	# Add	jac=gradient	As A Parameter For The Optional Part.
-		self.theta=params.x
+		self.create_dataset()
+		params=myMin(self.cost,self.model,method="L-BFGS-B", jac=gradient)	# Add	jac=gradient	As A Parameter For The Optional Part.
+		self.model=params.x
+		fp=open("maxEntModel.csv","w")
+		fp.write(",".join(list(self.model)))
+		fp.close()
 	def gradient(self,model):
 		self.model=model
 		totalCost=0.0
@@ -82,3 +85,5 @@ class MyMaxEnt():
 			self.currentHist[it]=[]
 			for jt in self.funcs:
 				self.currentHist[it].append(jt(h,it))
+	def setModel(self,model):
+		self.model=np.array(model)

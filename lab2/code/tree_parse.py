@@ -1,12 +1,15 @@
 import nltk 
-with open('../NDTV_mobile_reviews_Classified/apple-iphone-5/apple-iphone-5-first-look.txt', 'r') as f:
+with open('../NDTV_mobile_reviews_Classified/karbonn-kt-21/karbonn-kt-21-review.txt', 'r') as f:
     sample = f.read()
 
 def nltk_tree_to_list(node):
 	if(type(node) is nltk.tree.Tree):
-		res = []
-		for child in node:
-			res += nltk_tree_to_list(child)
+		if(len(node.leaves()) == 1):
+			res = [(node.leaves()[0][0], node.label())]
+		else:
+			res = []
+			for child in node:
+				res += nltk_tree_to_list(child)
 		return res
 	else:
 		return [node]
