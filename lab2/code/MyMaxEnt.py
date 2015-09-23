@@ -3,10 +3,10 @@ import numpy as np
 from scipy.optimize import minimize as myMin
 class MyMaxEnt():
 	def __init__(self,histLst,funcs):	# Init With Both List Of Hist,Tag Pairs, And Functions (Callbacks).
-		self.model=np.array([0.0]*len(funcs))
+		self.model=np.array([0.1]*len(funcs))
 		self.histLst=histLst
 		self.funcs=funcs
-		self.Y=["OTHER","PERSON","GPE","ORGANIZATION","LOCATION","TIME","DATE","MONEY"]	# IMPORTANT Fill This Up With All Possible Tags. IMPORTANT
+		self.Y=["OTHER","PERSON","GPE","ORGANIZATION","LOCATION","TIME","DATE","MONEY","PERCENT","FACILITY"]	# IMPORTANT Fill This Up With All Possible Tags. IMPORTANT
 		self.trainEx=[]
 		self.testEx=[]
 		# Above Line To Be Used If Both Train And Test Are In The Same File.
@@ -34,7 +34,7 @@ class MyMaxEnt():
 				if k!="_exOP":
 					nF+= math.exp(self.dotP(v))
 			totalCost-=math.log(nF)
-		return totalCost
+		return -totalCost
 	def classify(self,h):	# Call On History Tuples To Test For, Returns Tag.
 		allTags=[]
 		self.histConvert(list(h))
@@ -42,12 +42,12 @@ class MyMaxEnt():
 		for it in self.Y:
 			allTags.append(self.p_y_given_x(h,it))
 		manC=0
-		maxV=0
+		maxV=0.0
 		for it in range(len(allTags)):
 			if maxV<allTags[it]:
 				maxV=allTags[it]
 				maxC=it
-		return self.Y[it]
+		return self.Y[maxC]
 	def dotP(self,h):
 		cumul=0.0
 		for ln in range(len(self.model)):
@@ -61,7 +61,7 @@ class MyMaxEnt():
 		return math.exp(self.dotP(self.currentHist[tag]))/self.total
 	def train(self):	# Call To Train Machine
 		self.create_dataset()
-		params=myMin(self.cost,self.model,method="L-BFGS-B")	# Add	jac=gradient	As A Parameter For The Optional Part.
+		params=myMin(self.cost,self.model,method="L-BFGS-B", jac=self.gradient)	# Add	jac=gradient	As A Parameter For The Optional Part.
 		self.model=params.x
 		fp=open("maxEntModel.csv","w")
 		fp.write(",".join([str(itr) for itr in list(self.model)]))
@@ -79,7 +79,7 @@ class MyMaxEnt():
 					tmpTot+=tmp
 					nF+=v*tmp
 			totalCost-=(float(nF)/tmpTot)
-		return totalCost
+		return -totalCost
 	def histConvert(self,h):
 		for it in self.Y:
 			self.currentHist[it]=[]
