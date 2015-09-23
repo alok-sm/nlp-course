@@ -41,12 +41,12 @@ def get_functions():
 		return 0.0
 
 	def isPerson(history, tag):
-		if (history[3]>0 and re.search("NNP?", history[2][history[3]-1][1])) or (history[3]<len(history[2])-1 and re.search("NNP?", history[2][history[3]+1][1])) and tag=="PERSON":
+		if (history[3]>0 and re.search("NNP", history[2][history[3]-1][1])) or (history[3]<len(history[2])-1 and re.search("NNP", history[2][history[3]+1][1])) and tag=="PERSON":
 			return 1.0
 		return 0.0
 
 	def isLocation(history, tag):
-		if (history[3]>1 and re.search("NNP?", history[2][history[3]-2][1]) and history[2][history[3]-1][0].strip()==",") or (history[3]<len(history[2])-2 and re.search("NNP?", history[2][history[3]+2][1]) and history[2][history[3]+1][0].strip()==",") and tag=="LOCATION":
+		if (history[3]>1 and re.search("NNP.?", history[2][history[3]-2][1]) and history[2][history[3]-1][0].strip()==",") or (history[3]<len(history[2])-2 and re.search("NNP.?", history[2][history[3]+2][1]) and history[2][history[3]+1][0].strip()==",") and tag=="LOCATION":
 			return 1.0
 		return 0.0
 
