@@ -2,8 +2,19 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 import MyMaxEnt
-with open('../NDTV_mobile_reviews_Classified/karbonn-kt-21/karbonn-kt-21-review.txt', 'r') as f:
+import os
+
+
+#test_sen = raw_input("Enter a sentence : ")
+#with open('../NDTV_mobile_reviews_Classified/karbonn-kt-21/karbonn-kt-21-review.txt', 'a') as f:
+#    f.write("\n"+test_sen)
+
+
+with open('data.txt', 'r') as f:
     sample = f.read()
+
+
+
 def get_functions():
 
 	def is_first_word(history, tag):
@@ -121,4 +132,4 @@ for it in maxEnt.testList:
 	tCount+=1
 	if maxEnt.classify(it[0])==it[1]:
 		aCount+=1
-print "Accuracy Is:",aCount/tCount
+print "Accuracy with 20% dataset :",aCount/tCount
