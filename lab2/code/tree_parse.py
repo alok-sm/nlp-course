@@ -3,17 +3,10 @@ from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 import MyMaxEnt
 import os
-
-
-#test_sen = raw_input("Enter a sentence : ")
-#with open('../NDTV_mobile_reviews_Classified/karbonn-kt-21/karbonn-kt-21-review.txt', 'a') as f:
-#    f.write("\n"+test_sen)
-
+import re
 
 with open('data.txt', 'r') as f:
-    sample = f.read()
-
-
+	sample = f.read()
 
 def get_functions():
 
@@ -32,6 +25,49 @@ def get_functions():
 		if r1 and r1.group()==word or r2 and r2.group()==word and tag=="TIME":
 			return 1.0
 		return 0.0
+
+	def isMoney(history, tag):
+		word=history[2][history[3]][0]
+		r1=re.search("Rs\.|$",word)
+		if (r1 and word.index(r1.group())==0) and tag=="MONEY":
+			tmp=word.strip(r1.group())
+			r2=re.search("\d+(\.\d+)?",tmp)
+			if r2 and r2.group()==tmp:
+				return 1.0
+		else:
+			r2=re.search("\d+\.\d+",word)
+			i=1
+			if r2 and tag=="MONEY":
+				while history+i<len(history[2]):
+					r3=re.search("dollar|rupee", history[2][history[3]+i][0])
+					r4=re.search("illion", history[2][history[3]+i][0])
+					if r3:
+						return 1.0
+					elif r4:
+						i+=1
+					else:
+						return 0.0
+			return 0.0
+
+
+
+
+	def isPercent(history, tag):
+		word=history[2][history[3]][0]
+		r1=re.search("\d+(\.\d+)?",word)
+		if r1 and (word.index("%")==len(word)-1 or history[2][history[3]+1][0]=="%" or re.search("(p|P)ercent",history[2][history[3]+1][0])) and tag=="PERCENT":
+			return 1.0
+		return 0.0
+
+	def honorific(history, tag):
+		word=history[2][history[3]][0]
+		word2=history[2][history[3]-1][0]
+		r1=re.search("M(r|rs|s)\.",word)
+		r2=re.search("M(r|rs|s)\.",word2)
+		if (r1 and word.index(r1.group())==0 or r2 and r2.group()==word2)and tag=="PERSON":
+			return 1.0
+		return 0.0
+
 
 	def isOther(history, tag):
 		word=history[2][history[3]][0]
@@ -92,14 +128,10 @@ def get_functions():
 		date1,
 		time1,
 		isOther,
-		# is_first_word,
-		# is_last_word,
+		#isPercent,
 		capital_first_letter,
-		# follows_noun,
-		# is_stopword,
-		# is_stemmed,
-		# is_number,
-		# is_abbrevation,
+		#isMoney,
+		#honorific,
 		is_country,
 		isLocation,
 		isPerson
@@ -152,7 +184,6 @@ tagset = set(tags)
 # print tags
 history = reduce(lambda x, y : x + y, [create_history(sentence) for sentence in chunked_sentences])
 
-
 args = list(zip(history, tags))
 #print args
 
@@ -166,6 +197,8 @@ aCount=0.0
 tCount=0.0
 for it in maxEnt.testList:
 	tCount+=1
+	print (it[0][2][it[0][3]][0], maxEnt.classify(it[0]))
 	if maxEnt.classify(it[0])==it[1]:
 		aCount+=1
 print "Accuracy with 20% dataset :",aCount/tCount
+

@@ -61,7 +61,7 @@ class MyMaxEnt():
 		return math.exp(self.dotP(self.currentHist[tag]))/self.total
 	def train(self):	# Call To Train Machine
 		self.create_dataset()
-		params=myMin(self.cost,self.model,method="L-BFGS-B", jac=self.gradient)	# Add	jac=gradient	As A Parameter For The Optional Part.
+		params=myMin(self.cost,self.model,method="L-BFGS-B")	# Add	jac=gradient	As A Parameter For The Optional Part.
 		self.model=params.x
 		fp=open("maxEntModel.csv","w")
 		fp.write(",".join([str(itr) for itr in list(self.model)]))
