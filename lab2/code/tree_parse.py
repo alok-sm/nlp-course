@@ -12,7 +12,7 @@ def nltk_tree_to_list(node):
 				res += nltk_tree_to_list(child)
 		return res
 	else:
-		return [node]
+		return [(node[0], 'OTHER')]
 
 sentences = nltk.sent_tokenize(sample)
 tokenized_sentences = [nltk.word_tokenize(sentence) for sentence in sentences]
