@@ -1,0 +1,164 @@
+data has 700963 characters, 93 unique.
+iter 0, loss: 113.314981, perplexity: 112705.489364 
+iter 1000, loss: 90.827660, perplexity: 8483.088264 
+iter 2000, loss: 75.907757, perplexity: 9235.132460 
+iter 3000, loss: 68.327164, perplexity: 7808.087999 
+iter 4000, loss: 66.667345, perplexity: 13607.291788 
+iter 5000, loss: 63.223932, perplexity: 9065.681381 
+iter 6000, loss: 63.146137, perplexity: 9696.665760 
+iter 7000, loss: 61.830519, perplexity: 7980.170733 
+iter 8000, loss: 60.876951, perplexity: 10872.398708 
+iter 9000, loss: 61.054667, perplexity: 8033.123788 
+iter 10000, loss: 60.156166, perplexity: 6856.134398 
+iter 11000, loss: 60.313802, perplexity: 7941.601290 
+iter 12000, loss: 59.357760, perplexity: 6904.001421 
+iter 13000, loss: 59.597378, perplexity: 6304.451238 
+iter 14000, loss: 58.334522, perplexity: 7398.965182 
+iter 15000, loss: 58.936686, perplexity: 6137.741598 
+iter 16000, loss: 58.172552, perplexity: 5500.300398 
+iter 17000, loss: 55.958555, perplexity: 6032.936992 
+iter 18000, loss: 55.342654, perplexity: 6305.417844 
+iter 19000, loss: 56.189239, perplexity: 5869.629611 
+iter 20000, loss: 55.716087, perplexity: 6222.960092 
+iter 21000, loss: 53.687888, perplexity: 5892.406540 
+iter 22000, loss: 56.064524, perplexity: 6410.230997 
+iter 23000, loss: 56.854579, perplexity: 5993.423888 
+iter 24000, loss: 57.105064, perplexity: 7364.830698 
+iter 25000, loss: 56.814851, perplexity: 5683.486531 
+iter 26000, loss: 57.286850, perplexity: 6265.988407 
+iter 27000, loss: 56.374862, perplexity: 7686.639128 
+iter 28000, loss: 58.228449, perplexity: 7487.344385 
+iter 29000, loss: 56.903016, perplexity: 6274.789258 
+iter 30000, loss: 56.779305, perplexity: 7990.053391 
+iter 31000, loss: 56.031933, perplexity: 6829.942011 
+iter 32000, loss: 57.576902, perplexity: 16355.034714 
+iter 33000, loss: 56.407404, perplexity: 8295.869356 
+iter 34000, loss: 57.582382, perplexity: 8021.118813 
+iter 35000, loss: 56.549652, perplexity: 5959.236697 
+iter 36000, loss: 55.496664, perplexity: 7508.255831 
+iter 37000, loss: 56.016705, perplexity: 6071.997549 
+iter 38000, loss: 56.073665, perplexity: 5986.117986 
+iter 39000, loss: 56.327235, perplexity: 6972.068180 
+iter 40000, loss: 55.769593, perplexity: 6428.817764 
+iter 41000, loss: 55.773019, perplexity: 5910.109272 
+iter 42000, loss: 54.423305, perplexity: 6314.666516 
+iter 43000, loss: 55.421985, perplexity: 5447.971721 
+iter 44000, loss: 55.095344, perplexity: 5108.251804 
+iter 45000, loss: 52.653739, perplexity: 4442.042710 
+iter 46000, loss: 51.869569, perplexity: 6137.139662 
+iter 47000, loss: 53.080554, perplexity: 6025.098152 
+iter 48000, loss: 52.833851, perplexity: 5314.063963 
+iter 49000, loss: 50.563922, perplexity: 4972.613917 
+iter 50000, loss: 53.164401, perplexity: 6415.334997 
+iter 51000, loss: 54.416269, perplexity: 6096.607519 
+iter 52000, loss: 54.842894, perplexity: 5527.304788 
+iter 53000, loss: 54.772212, perplexity: 6235.731337 
+iter 54000, loss: 55.388891, perplexity: 7436.830645 
+iter 55000, loss: 54.119128, perplexity: 7386.164972 
+iter 56000, loss: 54.641474, perplexity: 6623.503837 
+iter 57000, loss: 54.991222, perplexity: 5193.836377 
+iter 58000, loss: 54.881031, perplexity: 7269.444943 
+iter 59000, loss: 54.333837, perplexity: 6382.121651 
+iter 60000, loss: 55.663210, perplexity: 14837.215097 
+iter 61000, loss: 54.997868, perplexity: 7725.164967 
+iter 62000, loss: 56.272357, perplexity: 7880.802275 
+iter 63000, loss: 55.565282, perplexity: 6306.045901 
+iter 64000, loss: 54.135226, perplexity: 6270.628300 
+iter 65000, loss: 54.773976, perplexity: 5929.834136 
+iter 66000, loss: 54.887889, perplexity: 6217.303283 
+iter 67000, loss: 55.034840, perplexity: 10229.966492 
+iter 68000, loss: 54.514295, perplexity: 6388.944306 
+iter 69000, loss: 54.493774, perplexity: 5919.195444 
+iter 70000, loss: 52.954288, perplexity: 5000.334842 
+iter 71000, loss: 54.111510, perplexity: 5542.526594 
+iter 72000, loss: 53.994559, perplexity: 5027.738101 
+iter 73000, loss: 51.433656, perplexity: 4651.960338 
+iter 74000, loss: 50.111131, perplexity: 5423.870464 
+iter 75000, loss: 51.848259, perplexity: 5579.325952 
+iter 76000, loss: 51.514535, perplexity: 4736.755210 
+iter 77000, loss: 49.230799, perplexity: 5577.738296 
+iter 78000, loss: 51.728150, perplexity: 6162.593126 
+iter 79000, loss: 53.217474, perplexity: 5281.267615 
+iter 80000, loss: 53.819727, perplexity: 6475.790771 
+iter 81000, loss: 53.608378, perplexity: 6597.015899 
+iter 82000, loss: 54.428629, perplexity: 5931.623795 
+iter 83000, loss: 52.835213, perplexity: 6333.378747 
+iter 84000, loss: 53.507204, perplexity: 6811.433692 
+iter 85000, loss: 53.900310, perplexity: 5397.998739 
+iter 86000, loss: 53.819377, perplexity: 6776.026538 
+iter 87000, loss: 53.563109, perplexity: 6466.303059 
+iter 88000, loss: 54.185076, perplexity: 11865.909065 
+iter 89000, loss: 54.210730, perplexity: 8357.587284 
+iter 90000, loss: 55.701057, perplexity: 6402.857441 
+iter 91000, loss: 54.885457, perplexity: 6890.166645 
+iter 92000, loss: 53.337707, perplexity: 5251.796994 
+iter 93000, loss: 54.045894, perplexity: 6168.870414 
+iter 94000, loss: 54.213703, perplexity: 6506.598386 
+iter 95000, loss: 54.284002, perplexity: 8016.955207 
+iter 96000, loss: 53.800944, perplexity: 6996.864149 
+iter 97000, loss: 53.753256, perplexity: 5513.651873 
+iter 98000, loss: 51.993047, perplexity: 5062.161579 
+iter 99000, loss: 53.269795, perplexity: 5627.618195 
+iter 100000, loss: 53.203989, perplexity: 4548.748005 
+The iter which returned lowest perplexity value: 45000 with a perplexity value of 4442.04271019
+------------------------------
+Top 10 Sentences with the least perplexity
+----------------------
+Sentence 1
+he Inding on Arismagain aid wos rean mured trersty the then no tron inusts bater oulda
+007's win the fourd-of propre for by, thive not in on the In hit/ reagongringh in to mest ree the sevit to hont t
+-----
+Perplexity value 1552.17721375
+----------------------
+Sentence 2
+he Fents) at the nist cost hich actery thate inging deppopomy and he tumiow and dodulering 186 lont ap lisne thetem in the but in soumje tuiv toivti, t7 hes the thenc thet bxio s catt hich has finsors
+-----
+Perplexity value 1899.85098776
+----------------------
+Sentence 3
+hemnefingt sowalle-hined Dreand davinpedor inning cramued innbarvond the orscured staitred 3t tha recotrivis savelped res Sovally in the sepeied inte inathys firstook res sump
+
+Dronch and in thent 7f 
+-----
+Perplexity value 1989.96314524
+----------------------
+Sentence 4
+ingat to sccotiterak certoes Davas pumpredprias woth Gakhios bet his an-Orusct in 1-lead thather the teowe the Ocerbeatores bicd of India ke the crliy of candiea Navikve, at the sond of Beamaivenlaina
+-----
+Perplexity value 2119.17494526
+----------------------
+Sentence 5
+onilely to these dup in OAcere secos duker finco and to a crasge ront erss
+icleed comifiangeanc inemst warl woncing poutter secect thits Indepimedecher scoucidphrayed in Zimpalisyi 1954 Auphed pomles 
+-----
+Perplexity value 2140.15166858
+----------------------
+Sentence 6
+om for his ound a Indiin Authang 3 Jay Drivavagan codai, Pquving the Inting furme Bex ODNtrol he to 1 19 taleas wisherent a poladne calplest in modeng Pand runed and a recopred wae an giss jongry aver
+-----
+Perplexity value 2341.72272811
+----------------------
+Sentence 7
+he sigal Magayavam in suriving the paticasind tha In Dhakci wae for the lilikphed the 17 the maser an thing hich, Tis bheal af the a Indijss of the sunst to plaviam of
+
+
+====
+Trast instr the Lurged, 7
+-----
+Perplexity value 2423.96746576
+----------------------
+Sentence 8
+ceraon and a stiirs bear the seius inmerade rety bung sidtegre the eridasion burs murng seceed sunthite acirde s exuitid loat of ====/S ackeEber Sesuentavis thists is crastanLy sored IBd Sosod Chevidr
+-----
+Perplexity value 2460.3410802
+----------------------
+Sentence 9
+he matresEdermec culder Shisty tot ard senled to Dien lige was hese tiskme Dyauntt as thos puptatiusto. and them thost iner a tings as Nad ance in ODI compernel fidly 8 fic inet in Nrmian Auningaralbi
+-----
+Perplexity value 2496.43131525
+----------------------
+Sentence 10
+out equuse wat the fporen abblisse the mend his byind a 19 917 ristia to als surtions in theunI Dughing liging for rasce dastt o pleded and to hch Ziakamnired sury in best hith 19 was me; th to thes h
+-----
+Perplexity value 2594.59888001
+------------------------------
