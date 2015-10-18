@@ -1,0 +1,156 @@
+data has 6127073 characters, 84 unique.
+iter 0, loss: 110.770419, perplexity: 77770224161347352466503196572702134501376.000000 
+iter 1000, loss: 87.545515, perplexity: 3751.315703 
+iter 2000, loss: 71.888937, perplexity: 2672.587213 
+iter 3000, loss: 64.429205, perplexity: 3030.423902 
+iter 4000, loss: 60.658899, perplexity: 2976.946671 
+iter 5000, loss: 59.495435, perplexity: 2915.569754 
+iter 6000, loss: 59.864426, perplexity: 3217.103410 
+iter 7000, loss: 58.586929, perplexity: 2690.758608 
+iter 8000, loss: 58.507887, perplexity: 3357.217499 
+iter 9000, loss: 57.085977, perplexity: 2568.958044 
+iter 10000, loss: 56.795535, perplexity: 2584.138273 
+iter 11000, loss: 56.548142, perplexity: 2566.296229 
+iter 12000, loss: 56.581942, perplexity: 2757.079732 
+iter 13000, loss: 56.118223, perplexity: 3684.855831 
+iter 14000, loss: 55.701806, perplexity: 2598.101150 
+iter 15000, loss: 56.266530, perplexity: 3262.451623 
+iter 16000, loss: 55.828088, perplexity: 2768.272568 
+iter 17000, loss: 54.205422, perplexity: 2142.328153 
+iter 18000, loss: 53.815192, perplexity: 2186.249372 
+iter 19000, loss: 54.236871, perplexity: 2487.913639 
+iter 20000, loss: 54.538777, perplexity: 2740.364635 
+iter 21000, loss: 54.051590, perplexity: 2141.267041 
+iter 22000, loss: 53.524529, perplexity: 2709.363883 
+iter 23000, loss: 53.290781, perplexity: 2122.767879 
+iter 24000, loss: 52.778397, perplexity: 2007.749262 
+iter 25000, loss: 52.830423, perplexity: 2358.115393 
+iter 26000, loss: 52.080784, perplexity: 2174.591779 
+iter 27000, loss: 53.062579, perplexity: 2332.112922 
+iter 28000, loss: 53.356003, perplexity: 2021.253622 
+iter 29000, loss: 52.741714, perplexity: 2049.068162 
+iter 30000, loss: 52.372719, perplexity: 1696.964711 
+iter 31000, loss: 52.275495, perplexity: 2103.638793 
+iter 32000, loss: 52.294726, perplexity: 2053.891582 
+iter 33000, loss: 52.046777, perplexity: 1916.527733 
+iter 34000, loss: 53.015589, perplexity: 2299.111295 
+iter 35000, loss: 52.722024, perplexity: 2126.082441 
+iter 36000, loss: 53.221599, perplexity: 2015.002574 
+iter 37000, loss: 52.831673, perplexity: 2106.383206 
+iter 38000, loss: 52.335064, perplexity: 1824.133225 
+iter 39000, loss: 52.793728, perplexity: 2044.727148 
+iter 40000, loss: 52.449959, perplexity: 2208.379081 
+iter 41000, loss: 52.553719, perplexity: 2054.256239 
+iter 42000, loss: 52.383059, perplexity: 1864.642545 
+iter 43000, loss: 53.511762, perplexity: 2003.665341 
+iter 44000, loss: 51.929393, perplexity: 1667.134423 
+iter 45000, loss: 50.850241, perplexity: 1711.391011 
+iter 46000, loss: 50.229957, perplexity: 1645.606536 
+iter 47000, loss: 49.945477, perplexity: 1714.142523 
+iter 48000, loss: 49.662611, perplexity: 2149.630226 
+iter 49000, loss: 49.390569, perplexity: 1938.250048 
+iter 50000, loss: 49.491083, perplexity: 1561.856120 
+iter 51000, loss: 50.050003, perplexity: 1824.184828 
+iter 52000, loss: 50.562853, perplexity: 1643.195757 
+iter 53000, loss: 50.985496, perplexity: 1932.352295 
+iter 54000, loss: 51.381889, perplexity: 1730.580237 
+iter 55000, loss: 50.945325, perplexity: 1992.799214 
+iter 56000, loss: 49.891890, perplexity: 1726.710707 
+iter 57000, loss: 52.097868, perplexity: 1894.500840 
+iter 58000, loss: 52.450809, perplexity: 1888.534296 
+iter 59000, loss: 52.285626, perplexity: 2006.694353 
+iter 60000, loss: 50.694715, perplexity: 1714.950042 
+iter 61000, loss: 50.633199, perplexity: 1968.436143 
+iter 62000, loss: 49.262780, perplexity: 1736.368454 
+iter 63000, loss: 50.168052, perplexity: 1870.544497 
+iter 64000, loss: 50.316995, perplexity: 1979.531210 
+iter 65000, loss: 51.102105, perplexity: 1925.991403 
+iter 66000, loss: 49.447737, perplexity: 1988.431454 
+iter 67000, loss: 49.842715, perplexity: 1928.596097 
+iter 68000, loss: 49.557504, perplexity: 1835.919251 
+iter 69000, loss: 50.007949, perplexity: 2014.648094 
+iter 70000, loss: 50.266965, perplexity: 1986.892078 
+iter 71000, loss: 50.394716, perplexity: 1849.809536 
+iter 72000, loss: 50.737615, perplexity: 2181.191820 
+iter 73000, loss: 49.451125, perplexity: 2021.674970 
+iter 74000, loss: 49.992924, perplexity: 2023.603316 
+iter 75000, loss: 49.828734, perplexity: 1873.568939 
+iter 76000, loss: 48.554780, perplexity: 1805.812813 
+iter 77000, loss: 48.624333, perplexity: 1739.750321 
+iter 78000, loss: 49.961919, perplexity: 2014.363736 
+iter 79000, loss: 49.986237, perplexity: 1689.768077 
+iter 80000, loss: 50.519004, perplexity: 1698.144667 
+iter 81000, loss: 49.667238, perplexity: 1652.233140 
+iter 82000, loss: 49.925380, perplexity: 1617.550111 
+iter 83000, loss: 48.780593, perplexity: 1757.030534 
+iter 84000, loss: 50.625799, perplexity: 1849.683224 
+iter 85000, loss: 49.902306, perplexity: 1841.080608 
+iter 86000, loss: 49.158538, perplexity: 1827.537426 
+iter 87000, loss: 48.567323, perplexity: 1631.659621 
+iter 88000, loss: 48.558666, perplexity: 1596.830340 
+iter 89000, loss: 48.505564, perplexity: 1709.727070 
+iter 90000, loss: 49.296291, perplexity: 1546.327205 
+iter 91000, loss: 47.924180, perplexity: 1759.398084 
+iter 92000, loss: 48.157706, perplexity: 1844.492706 
+iter 93000, loss: 48.771336, perplexity: 1934.379766 
+iter 94000, loss: 47.819607, perplexity: 1679.019361 
+iter 95000, loss: 48.379772, perplexity: 1764.843174 
+iter 96000, loss: 49.298717, perplexity: 1698.512933 
+iter 97000, loss: 49.109238, perplexity: 1852.743900 
+iter 98000, loss: 47.656685, perplexity: 1661.344712 
+iter 99000, loss: 47.154743, perplexity: 1405.442343 
+iter 100000, loss: 47.970212, perplexity: 1804.998429 
+The iter which returned lowest perplexity value: 99000 with a perplexity value of 1405.44234323
+------------------------------
+Top 10 Sentences with the least perplexity
+----------------------
+Sentence 1
+at this . The fition of cict our it ock dough is acdistes ? ? ? Thows fokme had to Lied . If Keops , histicaled to licdy and the pr. U.meiply be the '' shomola ? ? ? ? ? In ktiow Stepps , the be owy u
+-----
+Perplexity value 614.355457185
+----------------------
+Sentence 2
+e shabe of iches , Trues arvive buchazver llepzuted dive theingian of be of `` oll coneve immently , the why yockandly the lambissly but and chorition , of the adnent of the set . The suilly by the pr
+-----
+Perplexity value 786.50458706
+----------------------
+Sentence 3
+ic oves . The prodestuat mine all of the in feal to and is `` Jonning Dliend of the af for not the the that moitions tenture bee dithis aldutimed of theteld . Ind of the frsthing a meaney of dreace ti
+-----
+Perplexity value 803.170424628
+----------------------
+Sentence 4
+ofis tich in ax thewt groical chapong , that the wes it then that the cunatatire them couaed . The wall nailln and unniral , is than mormal five is elouth groest imed confiss emsentrash to the with . 
+-----
+Perplexity value 812.311782971
+----------------------
+Sentence 5
+o roust heope . Mutly be wath some mith whentitise , advory fertade . Jerek yeferouch of the unite it best my moyper whikmoue as The tils ? ? Nem ame ? ? Imanys as orminduncech motsilly in the it to a
+-----
+Perplexity value 829.815838289
+----------------------
+Sentence 6
+itt on the seater has ? ? I of a reinusted the emchemm expalation math . `` he dortmarcered of the conterther not ceekmietiond eatore fwall of as to mayme deally . If whe averss of the Whithly . But a
+-----
+Perplexity value 832.463894369
+----------------------
+Sentence 7
+lor he norce : Iw giops '' ? ? park of `` to makideth . We and of the out ott . yow thomade at had dottestens , the `` romminisity prope ocked . I or ey cee , the fare , of dided wan codfee of scitici
+-----
+Perplexity value 838.676103648
+----------------------
+Sentence 8
+enfly till trum to pearly at in a chews . The selar , on ielis sored Mroumizeso ? ? Jopumerial mepork '' ; ; woth intestain is cad rome the station oth that of this igace wald Compolt tippe hasilial p
+-----
+Perplexity value 857.011003246
+----------------------
+Sentence 9
+y hist entationald and bes this to sach umbliciad , Of all , wat it Salize , soul sooke . Thery in beeingennicte contesquplie nial , and of cralled dithor of the sick wet Wase fanys in the mastions ''
+-----
+Perplexity value 865.341576208
+----------------------
+Sentence 10
+at oflers perplent , wowed thentowh alal a propfuralety salm the retament , `` and this ? ? onlt a Dirmes the med , vew roming theition sectitated dureny ? ? It the Flatione propshels we of stowe Best
+-----
+Perplexity value 895.181606542
+------------------------------
