@@ -1,0 +1,67 @@
+data has 6127073 characters, 84 unique.
+iter 0, loss: 110.770426, perplexity: 276234256047008512969873791779864576.000000 
+iter 1000, loss: 86.700512, perplexity: 3738.128076 
+iter 2000, loss: 71.019563, perplexity: 2531.970194 
+iter 3000, loss: 63.441089, perplexity: 2899.611338 
+iter 4000, loss: 59.854119, perplexity: 2658.160776 
+iter 5000, loss: 58.664748, perplexity: 2647.816291 
+iter 6000, loss: 59.045538, perplexity: 2825.499130 
+iter 7000, loss: 57.870146, perplexity: 2758.451847 
+iter 8000, loss: 57.916297, perplexity: 3496.359508 
+iter 9000, loss: 56.505647, perplexity: 2893.563213 
+iter 10000, loss: 56.047372, perplexity: 2572.510435 
+The iter which returned lowest perplexity value: 2000 with a perplexity value of 2531.97019385
+------------------------------
+Top 10 Sentences with the least perplexity
+----------------------
+Sentence 1
+a un at . fson Couct montas melktothan s Bn un and the Cs atifmprui llas Poustsunsivincior ts apnce .t Ptosid to as amectiotGas , to cass Spfrat . an and the in aantiil zn c1 thesd at in Lo to Demecto
+-----
+Perplexity value 1395.54177941
+----------------------
+Sentence 2
+a Latemaott the Pcovcolg Sptolpntilat . cat aciomirtrerus ioimict etse nalcen the alt at chhaad , alto s hvabint ay vesibi topin th faftatkt at cin anthamnrer itbaidthad rant asditterians , d n the s 
+-----
+Perplexity value 1451.48447239
+----------------------
+Sentence 3
+olt 's wemtongvasd thpaat tustof nutt the y oc oinn Po erotar tut and arem chilttor idids at t to the `'y Dan5 toithaids in , Dabdel dattat ngre cupuors the anpl atmomatat to` testedind tomthe to who 
+-----
+Perplexity value 1485.70018476
+----------------------
+Sentence 4
+e `tatesspatat alan netlondmin d Lacintutaiis Ho tiliateaveprentims Pid ten the toendader Aly the f idprontovecsovedcof a ledded ppatiint caltyovis Sorintas , an of thometimititt . E siisitasisin tope
+-----
+Perplexity value 1567.52101596
+----------------------
+Sentence 5
+e, ad on a thaca pateatcaf on t po aticeufepiaant picnded The ipan cy remkin cufinat a pbusd po `cs dele to the , lo -'cties HHimatagcn the thavattes or on tho 5Das tbettad Pap ic`attut of thend no at
+-----
+Perplexity value 1709.89804223
+----------------------
+Sentence 6
+as t' anct the Laciik s ialce ualto anol if in the It `aty Srof toreckes etia d Ontr tiens heft clin trellls at hasitodud hal als of c and sid outat sisn alanitiodithe pras orize is that eligt aros at
+-----
+Perplexity value 1735.35537324
+----------------------
+Sentence 7
+as thor ian paty I acer , 'nent that asd illags ps Jitiiit tusinid that as aR'p asirdttedto fertomenniost essatisisticbestaas e asessatmastacesnetlel taCoron of af tectas seldo hage thend d n A Lacias
+-----
+Perplexity value 1781.85714111
+----------------------
+Sentence 8
+e ththess Mtune ce morpir stas . Wounltate tiontaccitirt o ifmitmpadasd Arittoly torcostudctiodtat that s. Hsriltdedesancime tkansouciobe Bu pousthasd Led Benald herpan , ) , y toped affan ametinins n
+-----
+Perplexity value 1797.36690791
+----------------------
+Sentence 9
+e to cy ede sid te fOfond hedpepd fimthits . `ls ppmetar in fomtiopict thio mmaptcat ast mes deatititpmicad thastoowiin . atoctuty Anplate peot of apasee iasecsenc tpin the tipelistodedie on they to a
+-----
+Perplexity value 1831.4740642
+----------------------
+Sentence 10
+e aipitse poty tunstritiil Lasd antisinoovatsod aplasinine etmom Oke afbasy Ausl opipulle praslertrrel S the Paguted ho Sarsecentamint , , s Led ns Deliw Soutyire pmice e denev on Sels thass he i toup
+-----
+Perplexity value 1848.69072323
+------------------------------
+

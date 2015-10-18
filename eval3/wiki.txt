@@ -1,0 +1,71 @@
+data has 700963 characters, 93 unique.
+iter 0, loss: 113.314985, perplexity: 119322.379258 
+iter 1000, loss: 89.069910, perplexity: 7075.880110 
+iter 2000, loss: 74.118324, perplexity: 6815.370843 
+iter 3000, loss: 66.148243, perplexity: 5257.984490 
+iter 4000, loss: 64.041258, perplexity: 4493.358570 
+iter 5000, loss: 60.984284, perplexity: 8992.047091 
+iter 6000, loss: 60.398084, perplexity: 12076.396518 
+iter 7000, loss: 58.565136, perplexity: 6524.565247 
+iter 8000, loss: 57.657080, perplexity: 20867.956574 
+iter 9000, loss: 57.260809, perplexity: 5310.879927 
+iter 10000, loss: 57.195773, perplexity: 10915.734639 
+The iter which returned lowest perplexity value: 4000 with a perplexity value of 4493.35857033
+------------------------------
+Top 10 Sentences with the least perplexity
+----------------------
+Sentence 1
+to S= dod in the h intial 2012=E
+07 Maral Bot due ach1 1095 ce 1958 Ind ert tal-1t dha amle 10 waee oF 28i Alull 10
+1811 Sll and a Sivin sutind Aannch hagand ac tene har bheugo binstend pn lan 57 famh
+-----
+Perplexity value 1721.36932769
+----------------------
+Sentence 2
+mit bast f rudites ABk Sal Baref poulit in 20, an end uprese thaud Ph in 1103 Bitl Ceco WolJal puran bevor Sn Sollulce (Do ans 1901 Jald of thatend on ters wit 
+2007 Bams on Bred antent wot fiss Jas r
+-----
+Perplexity value 2608.12150329
+----------------------
+Sentence 3
+ is aud Jont ouald ind ala. 2911 nostin 1915 Woudad enle 1sd sol 191itar historal ans and Khinnnar wotaEd buloing == puind Jovild wa an wathormity sent orlaed coin Audenge Chal fo ther Jerrinmamonm iM
+-----
+Perplexity value 2636.33870453
+----------------------
+Sentence 4
+In he plorg ke Doap Pimeis annure ame 02 18 or ava K= Ce wis nalab tul Kas fod, In 146-Oat moil ard107 Rous Man fus 15 Indar Yluter Pvelawewark wabd nercteut didied blul bh hese pued pram in He tot ig
+-----
+Perplexity value 2647.22483518
+----------------------
+Sentence 5
+Olarpourolas was bha5 3rolere a nod 1001) the s in hos chaevin wurt a Waabe p whol Rasu apling Miv bouE Palims1085 1972013090 redactsed poso ard on 19 _ wr tac an ment war wushurd Aud lrtond baterbeer
+-----
+Perplexity value 2835.35602824
+----------------------
+Sentence 6
+moptoul Khar his to "1, In that sta fiat ol Pedunlmpce the 3e-eas foum Fis nusly bunn bt ot Ho bivo ded and 4 Ou uw Len b Vaand fitul wrtarl hes Hus suves sed. mod lu rrall wo bo Dionor Vulpy end " fo
+-----
+Perplexity value 2842.86219834
+----------------------
+Sentence 7
+iN teoo and ronta Fiand an ca 1914 35 hit war Afouzlu-the M1thens edron Anded n07/ A3s  andeded cf 201In nawas th.n8 1817 of Awat amsi 2895 sun. Ind Enall lu len in Pos Jronnan sonionand Ke Relond In 
+-----
+Perplexity value 2846.43577107
+----------------------
+Sentence 8
+Kustin tho Jadores ar erubevute bn in 1911033-lu Je Bery pnes Na Ja ay Ded ed en tuch he fin Mengaud alar 2007 the Rof ratirat d su Deod A= hrl in 2000
+ Kucuy Cher wam an, andelnarab he.un bas Ond tha
+-----
+Perplexity value 2847.61687639
+----------------------
+Sentence 9
+waam bo ind and foc an Ron in Oand Indudwe wan foct waplrn an on hen wa 28 23 her Kabi=  m9l srrionby Pranat Optil to tareound l wond aluagouumied o in 2085 Om Muduan Pamu horl 20.. Induw n=s aonold o
+-----
+Perplexity value 2922.37472299
+----------------------
+Sentence 10
+Ongedand beort Shin Indiad nen co Al pus of Ador wis ware Jay Ch und an hod rogice buwast De -n Ront iHul 
+3 fol menk Rad oun and ogainober the Pan enu1313 1945 Induluctral o= 337 18 Honing a  t thy I
+-----
+Perplexity value 2922.37472299
+------------------------------

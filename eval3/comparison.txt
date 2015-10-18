@@ -1,0 +1,15 @@
+We Checked Perplexity Every 1000 Iterations. (Any Less, And It Would Take Too Long)
+
+The Sample Wiki Corpus Execution Gave The Following Results:
+Least Perplexity:4493.35857033
+Corresponding Iteration:4000
+Top 10 Sentences Have Perplexities Ranging From 1721.36932769 To 2922.37472299
+The Full Output Can Be Seen In wiki.txt
+
+The Sample Brown Corpus Execution Gave The Following Results:
+Least Perplexity:2531.97019385
+Corresponding Iteration:2000
+Top 10 Sentences Have Perplexities Ranging From 1395.54177941 To 1848.69072323
+The Full Output Can Be Seen In brown.txt
+
+In General, Brown Corpus Gives Better Results
