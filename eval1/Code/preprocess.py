@@ -10,7 +10,7 @@ def document_preprocess(doc): # preprocess one document
 	doc = remove_aliases(doc.lower())
 	# print doc
 	doc = tokenizer.tokenize(doc)
-	stopword_list=[
+	stopword_list = [
 		"a",
 		"the",
 		"and",
