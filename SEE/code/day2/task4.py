@@ -12,7 +12,7 @@ inputLst = inputLst[:int(0.75*len(inputLst))]
 testY = targets[int(0.75*len(targets)):]
 targets = targets[:int(0.75*len(targets))]
 results = []
-net = nl.net.newff([[0.0, 1.0] for _ in xrange(14)], [20, 22])
+net = nl.net.newff([[0.0, 1.0] for _ in xrange(26)], [20, 22])
 net.train(inputLst, targets, show = 1, epochs = 300)
 ret = net.sim(testX)
 for it in range(len(ret)):

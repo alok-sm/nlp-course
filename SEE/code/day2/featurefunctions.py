@@ -82,4 +82,4 @@ def get_functions():
 		# ["glove"],
 	]
 	# print len([create_fn(keyword, 1) for keyword in keywords_1] + [create_fn(keyword, 2) for keyword in keywords_1 + keywords_2])
-	return [create_fn(keyword, 1) for keyword in keywords_1] + [create_fn(keyword, 2) for keyword in keywords_1]
+	return [create_fn(keyword, 1) for keyword in keywords_1] + [create_fn(keyword, 2) for keyword in keywords_2]
